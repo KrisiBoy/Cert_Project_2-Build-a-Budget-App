@@ -45,12 +45,12 @@ Printing the class instance returns a beautifully formatted output:
 
 from budget import Category, create_spend_chart
 
-### Create instances of budget categories
+## Create instances of budget categories
 food = Category("Food")
 clothing = Category("Clothing")
 auto = Category("Auto")
 
-### Perform financial transactions
+## Perform financial transactions
 food.deposit(1000, "initial deposit")
 food.withdraw(10.15, "groceries")
 food.withdraw(15.89, "restaurant and more food")
@@ -59,11 +59,11 @@ clothing.deposit(500, "initial deposit")
 food.transfer(50, clothing)
 clothing.withdraw(25.55, "t-shirt")
 
-### Check Category Print Representation
+## Check Category Print Representation
 print(food)
 print(clothing)
 
-### Generate Spend Summary Chart
+## Generate Spend Summary Chart
 print(create_spend_chart([food, clothing, auto]))
 
 ## Example Console Output
